@@ -1,19 +1,30 @@
 print("""**************************
-Hesap Makinası Uygulaması
+Calculator Application
 
-İşlemler;
+Operations;
 
-1. Toplama İşlemi
+1. Summation
 
-2. Çıakrma İşlemi
+2. Subtraction
 
-3. Çarpma İşlemi
+3. Multiplication
 
-4. Bölme işlemi
+4. Division
 **************************
 """)
 
-a = int(input("Birinci sayı: "))
-b = int(input("İkinci sayı: "))
+a = int(input("First number: "))
+b = int(input("Second number: "))
 
-işlem = input("İşlemi giriniz: ")
+operation = input("Enter the operation: ")
+
+if operation == "1":
+    print("Summation of {} and {} is {}".format(a, b, a + b))
+elif operation == "2":
+    print("Subtraction of {} and {} is {}".format(a, b, a - b))
+elif operation == "3":
+    print("Multiplication of {} and {} is {}".format(a, b, a * b))
+elif operation == "4":
+    print("Division of {} and {} is {}".format(a, b, a / b))
+else:
+    print("There isn't any operation like that")
